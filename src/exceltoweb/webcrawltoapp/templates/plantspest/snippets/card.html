@@ -1,0 +1,14 @@
+<div class="card" style="width: 20rem;">
+  
+  {% if instance.Image %}
+
+    <img class="card-img-top" src="{{ instance.Image.url }}" width="10" height="150" alt="{{ instance.Disease}}">
+    {% endif %}
+  <div class="card-body">
+    <h4 class="card-title">{{ instance.Disease }}</h4>
+   <p class="card-text"> 
+   <h5> <font color="green">Secure any suspect specimens</font></h5>
+   {{instance.Secure_any_suspect_specimens|linebreaks|truncatewords:300 }}</p>
+ 
+  </div>
+</div>
